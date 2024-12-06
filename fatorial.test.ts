@@ -1,7 +1,7 @@
 import factorial from './fatorial';
 
 test('testa o fatorial do número -1', () => {
-    expect(factorial(-1)).toBeNaN(); 
+    expect(() => factorial(-1)).toThrowError('Fatorial não é definido para números negativos');
 });
 
 test('testa o fatorial do número 0', () => {
