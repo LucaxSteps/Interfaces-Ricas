@@ -4,7 +4,7 @@ function factorial(n: number): number {
         return 1;
     }
     if (n < 0) {
-        return NaN;
+        throw new Error('Fatorial não é definido para números negativos');
     }
     
     while (n > 1) {
