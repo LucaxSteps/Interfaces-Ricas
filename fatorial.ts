@@ -4,7 +4,7 @@ function factorial(n: number): number {
         return 1;
     }
     if (n < 0) {
-        return 0;
+        return NaN;
     }
     
     while (n > 1) {
